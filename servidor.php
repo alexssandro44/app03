@@ -36,7 +36,3 @@ if($soma>50){
 </html>
 
 
-
-
-git config --global user.email "alexssandro$gmail.com"
-git config --global user.name "alexssandro"
