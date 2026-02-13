@@ -37,25 +37,3 @@ else{
 </html>
 
 
-
-<?php
-
-$nome = $_POST['nome'];
-$idade = $_POST['idade'];
-$email = $_POST['email'];
-
-?>
-
-<?php
-
-if($idade>18){
-    echo "<p>Bom evento $nome !<p/>";
-}
-
-else{
-    echo "<p>Desculpa, $nome, você precisa ser 18+ para participar!<p/> ";
-}
-?>
-
-<a href="formulario.html"> voltar para o formulário </a>
-
