@@ -14,13 +14,15 @@
 $nome = $_POST['nome'];
 $idade = $_POST['idade'];
 $email = $_POST['email'];
-$ingresso = $_POS['ingresso'];
+$ingresso = $_POST['ingresso'];
+$total = ($ingresso * 10);
 ?>
 
 <?php
 
 if($idade>18){
     echo "<p>Bom evento $nome !<p/>";
+    echo "<P>Preço a ser pago: $total <p/>";
 }
 
 else{

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="formulario.css">
+</head>
+
+<body>
+    
+<!--- Nome completo
+
+Email
+
+Idade
+
+Curso escolhido (select)
+
+
+------->    
+
+<form method="post" action="servidor.php">
+
+
+  <p class="header text-center">Preencha o seguinte formulário</p>
+
+  
+  <div class="formulario">
+
+  <div class="input-group mb-3 ">
+
+  <span class="input-group-text" id="basic-addon1">Nome</span>
+  <input type="text" class="form-control" placeholder="Nome completo" aria-label="Username" aria-describedby="basic-addon1" name = "nome">
+ 
+  </div>
+  
+  <!--------------------------->
+  
+  <div class="input-group mb-3">
+
+  <span class="input-group-text" id="basic-addon1">Email</span>
+  <input type="email" class="form-control" placeholder="Informe seu emaail" aria-label="Username" aria-describedby="basic-addon1" name = "email">
+ 
+  </div>
+
+  <!--------------------------->
+  
+   <div class="input-group mb-3">
+
+  <span class="input-group-text" id="basic-addon1">Idade</span>
+  <input type="number" class="form-control" placeholder="Informe sua idade" aria-label="Username" aria-describedby="basic-addon1" name = "idade">
+ 
+  </div>
+
+  <!--------------------------->
+  <div class="input-group mb-3">
+
+  <!--- Lista de opções do formulário-->   
+  <!--- option cria mais uma opção para a lista -->
+  <select class="form-control" name="curso" required>
+  <option value="">Selecione o curso desejado</option>
+  <option value="Programação">Programação</option>
+  <option value="Banco de Dados">Banco de Dados</option>
+  <option value="Design">Design</option>
+  <option value="Administração">Administração</option>
+  <option value="Enfermagem">Enfermagem</option>
+  <option value="Redes e infraestrutura">Redes e infraestrutura</option>
+  <option value="Dados e inteligência artificial">Dados e inteligência artificial</option>
+  </select>
+  </div>
+ 
+  <!--------------------------->
+
+  <button type="submit" class="btn btn-outline-light">Enviar</button>
+  
+ 
+  </div>
+
+</form>
+
+</body>
+</html>
